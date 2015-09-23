@@ -39,7 +39,7 @@
 ; Manual load the cider package
 (add-to-list 'load-path "~/.emacs.d/cider-0.9.1")
 (require 'cider)
-
+(require 'cider-grimoire)
 
 (global-company-mode)
 (setq nrepl-popup-stacktraces nil)
