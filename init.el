@@ -46,6 +46,7 @@
 (add-to-list 'same-window-buffer-names "<em>nrepl</em>")
 (add-hook 'cider-mode-hook #'eldoc-mode)
 (add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'paredit-mode)
 (add-hook 'cider-mode-hook #'company-mode)
 
 ;; paredit
@@ -95,6 +96,8 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+
+;; M-x customize(-group) ++ ?
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
